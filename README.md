@@ -35,7 +35,9 @@ func main() {
 }
 ```
 
-The result is
+And the result is:
+
+![Screenshot of Sample Color Bash Output](example-output.png![img.png](img.png))
 
 ## ToDo
 
