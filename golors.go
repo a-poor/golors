@@ -2,27 +2,27 @@ package golors
 
 import "fmt"
 
-const ColorReset  = "\033[0m"
-const ColorRed    = "\033[31m"
-const ColorGreen  = "\033[32m"
-const ColorYellow = "\033[33m"
-const ColorBlue   = "\033[34m"
-const ColorPurple = "\033[35m"
-const ColorCyan   = "\033[36m"
-const ColorGray   = "\033[37m"
-const ColorGrey   = ColorGray
-const ColorWhite  = "\033[97m"
+const colorReset  = "\033[0m"
+const colorRed    = "\033[31m"
+const colorGreen  = "\033[32m"
+const colorYellow = "\033[33m"
+const colorBlue   = "\033[34m"
+const colorPurple = "\033[35m"
+const colorCyan   = "\033[36m"
+const colorGray   = "\033[37m"
+const colorGrey   = colorGray
+const colorWhite  = "\033[97m"
 
 // Print the character to reset the bash text color
 func Reset() {
-	fmt.Print(ColorReset)
+	fmt.Print(colorReset)
 }
 
 // Print arguments as red and then resets the color.
 // Wrapper around `fmt.Print`. Note: Doesn't add
 // a newline character at the end.
 func Red(a ...interface{}) {
-	fmt.Print(ColorRed)
+	fmt.Print(colorRed)
 	fmt.Print(a...)
 	Reset()
 }
@@ -39,7 +39,7 @@ func Redln(a ...interface{}) {
 // Wrapper around `fmt.Print`. Note: Doesn't add
 // a newline character at the end.
 func Green(a ...interface{}) {
-	fmt.Print(ColorGreen)
+	fmt.Print(colorGreen)
 	fmt.Print(a...)
 	Reset()
 }
@@ -56,7 +56,7 @@ func Greenln(a ...interface{}) {
 // Wrapper around `fmt.Print`. Note: Doesn't add
 // a newline character at the end.
 func Yellow(a ...interface{}) {
-	fmt.Print(ColorYellow)
+	fmt.Print(colorYellow)
 	fmt.Print(a...)
 	Reset()
 }
@@ -73,7 +73,7 @@ func Yellowln(a ...interface{}) {
 // Wrapper around `fmt.Print`. Note: Doesn't add
 // a newline character at the end.
 func Blue(a ...interface{}) {
-	fmt.Print(ColorBlue)
+	fmt.Print(colorBlue)
 	fmt.Print(a...)
 	Reset()
 }
@@ -90,7 +90,7 @@ func Blueln(a ...interface{}) {
 // Wrapper around `fmt.Print`. Note: Doesn't add
 // a newline character at the end.
 func Purple(a ...interface{}) {
-	fmt.Print(ColorPurple)
+	fmt.Print(colorPurple)
 	fmt.Print(a...)
 	Reset()
 }
@@ -107,7 +107,7 @@ func Purpleln(a ...interface{}) {
 // Wrapper around `fmt.Print`. Note: Doesn't add
 // a newline character at the end.
 func Cyan(a ...interface{}) {
-	fmt.Print(ColorCyan)
+	fmt.Print(colorCyan)
 	fmt.Print(a...)
 	Reset()
 }
@@ -125,7 +125,7 @@ func Cyanln(a ...interface{}) {
 // a newline character at the end.
 // Also note: Has same effect as the function `Grey`
 func Gray(a ...interface{}) {
-	fmt.Print(ColorGray)
+	fmt.Print(colorGray)
 	fmt.Print(a...)
 	Reset()
 }
@@ -144,7 +144,7 @@ func Grayln(a ...interface{}) {
 // a newline character at the end.
 // Also note: Has same effect as the function `Gray`
 func Grey(a ...interface{}) {
-	fmt.Print(ColorGrey)
+	fmt.Print(colorGrey)
 	fmt.Print(a...)
 	Reset()
 }
@@ -162,7 +162,7 @@ func Greyln(a ...interface{}) {
 // Wrapper around `fmt.Print`. Note: Doesn't add
 // a newline character at the end.
 func White(a ...interface{}) {
-	fmt.Print(ColorWhite)
+	fmt.Print(colorWhite)
 	fmt.Print(a...)
 	Reset()
 }

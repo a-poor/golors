@@ -37,7 +37,7 @@ func main() {
 
 And the result is:
 
-![Screenshot of Sample Color Bash Output](example-output.png![img.png](img.png))
+![Screenshot of Sample Color Bash Output](sample-bash-output.png)
 
 ## ToDo
 
