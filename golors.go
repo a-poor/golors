@@ -1,4 +1,4 @@
-package golor
+package golors
 
 import "fmt"
 
