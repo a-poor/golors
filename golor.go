@@ -1,25 +1,25 @@
-package main
+package golor
 
 import "fmt"
 
-const reset  = "\033[0m"
-const red    = "\033[31m"
-const green  = "\033[32m"
-const yellow = "\033[33m"
-const blue   = "\033[34m"
-const purple = "\033[35m"
-const cyan   = "\033[36m"
-const gray   = "\033[37m"
-const grey   = gray
-const white  = "\033[97m"
+const ColorReset  = "\033[0m"
+const ColorRed    = "\033[31m"
+const ColorGreen  = "\033[32m"
+const ColorYellow = "\033[33m"
+const ColorBlue   = "\033[34m"
+const ColorPurple = "\033[35m"
+const ColorCyan   = "\033[36m"
+const ColorGray   = "\033[37m"
+const ColorGrey   = ColorGray
+const ColorWhite  = "\033[97m"
 
 
 func Reset(a ...interface{}) {
-	fmt.Print(reset)
+	fmt.Print(ColorReset)
 }
 
 func Red(a ...interface{}) {
-	fmt.Print(red)
+	fmt.Print(ColorRed)
 	fmt.Print(a...)
 	Reset()
 }
@@ -30,7 +30,7 @@ func Redln(a ...interface{}) {
 }
 
 func Green(a ...interface{}) {
-	fmt.Print(green)
+	fmt.Print(ColorGreen)
 	fmt.Print(a...)
 	Reset()
 }
@@ -41,7 +41,7 @@ func Greenln(a ...interface{}) {
 }
 
 func Yellow(a ...interface{}) {
-	fmt.Print(yellow)
+	fmt.Print(ColorYellow)
 	fmt.Print(a...)
 	Reset()
 }
@@ -52,7 +52,7 @@ func Yellowln(a ...interface{}) {
 }
 
 func Blue(a ...interface{}) {
-	fmt.Print(blue)
+	fmt.Print(ColorBlue)
 	fmt.Print(a...)
 	Reset()
 }
@@ -63,7 +63,7 @@ func Blueln(a ...interface{}) {
 }
 
 func Purple(a ...interface{}) {
-	fmt.Print(purple)
+	fmt.Print(ColorPurple)
 	fmt.Print(a...)
 	Reset()
 }
@@ -74,7 +74,7 @@ func Purpleln(a ...interface{}) {
 }
 
 func Cyan(a ...interface{}) {
-	fmt.Print(cyan)
+	fmt.Print(ColorCyan)
 	fmt.Print(a...)
 	Reset()
 }
@@ -85,7 +85,7 @@ func Cyanln(a ...interface{}) {
 }
 
 func Gray(a ...interface{}) {
-	fmt.Print(gray)
+	fmt.Print(ColorGray)
 	fmt.Print(a...)
 	Reset()
 }
@@ -104,7 +104,7 @@ func Greyln(a ...interface{}) {
 }
 
 func White(a ...interface{}) {
-	fmt.Print(white)
+	fmt.Print(ColorWhite)
 	fmt.Print(a...)
 	Reset()
 }
