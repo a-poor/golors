@@ -96,11 +96,14 @@ func Grayln(a ...interface{}) {
 }
 
 func Grey(a ...interface{}) {
-	Gray(a...)
+	fmt.Print(ColorGrey)
+	fmt.Print(a...)
+	Reset()
 }
 
 func Greyln(a ...interface{}) {
-	Grayln(a...)
+	Grey(a...)
+	fmt.Println()
 }
 
 func White(a ...interface{}) {
