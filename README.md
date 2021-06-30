@@ -6,15 +6,15 @@ A tiny go package for printing colorful text to the terminal.
 
 Functions wrap `fmt.Print` and `fmt.Println` for the following colors:
 
-* ColorRed
-* ColorGreen
-* ColorYellow
-* ColorBlue
-* ColorPurple
-* ColorCyan
-* ColorGray
-* ColorGrey (alias of ColorGray)
-* ColorWhite
+* Red
+* Green
+* Yellow
+* Blue
+* Purple
+* Cyan
+* Gray
+* Grey (alias of Gray)
+* White
 
 ## Example
 

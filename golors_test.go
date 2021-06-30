@@ -5,12 +5,6 @@ import (
 	"testing"
 )
 
-func TestPlaceholder(t *testing.T) {
-	if false {
-		t.Error("Hello world!")
-	}
-}
-
 func TestPrint(t *testing.T) {
 	fmt.Println("The following should all be on the same line...")
 	Red("red")
@@ -25,7 +19,7 @@ func TestPrint(t *testing.T) {
 	fmt.Println("\nDone.")
 }
 
-func TestAllColors(t *testing.T) {
+func TestPrintln(t *testing.T) {
 	fmt.Println("The following should all be on different lines...")
 	Redln("This should be red")
 	Greenln("This should be green")
