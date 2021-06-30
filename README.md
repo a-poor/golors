@@ -24,12 +24,12 @@ package main
 import "github.com/a-poor/golors"
 
 func main() {
-	// Print red text and a new-line character
-	golors.Redln("This text is red!")
-	
-	// These three commands print a single line "whitecyanpurple"
-	// but where each word is the correct color
-	golors.White("white")
+    // Print red text and a new-line character
+    golors.Redln("This text is red!")
+    
+    // These three commands print a single line "whitecyanpurple"
+    // but where each word is the correct color
+    golors.White("white")
     golors.Cyan("cyan")
     golors.Purpleln("purple")
 }
