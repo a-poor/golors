@@ -1,5 +1,7 @@
 # golors
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/a-poor/golors.svg)](https://pkg.go.dev/github.com/a-poor/golors)
+
 _created by Austin Poor_
 
 A tiny go package for printing colorful text to the terminal.
